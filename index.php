@@ -1,7 +1,7 @@
 <?php
 // error_reporting(0);
 
-include 'partials/dbconnect.php';
+// include 'partials/dbconnect.php';
 $shareholder = 0;
 $sharesold = 0;
 $sharesoldprice = 0;
