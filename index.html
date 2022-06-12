@@ -1,25 +1,4 @@
-<?php
-// error_reporting(0);
 
-// include 'partials/dbconnect.php';
-$shareholder = 0;
-$sharesold = 0;
-$sharesoldprice = 0;
-$ss = 0;
-$ssp = 0;
-$sspm = 0;
-
-$sql = "SELECT * FROM `share`";
-$result = mysqli_query($conn, $sql);
-while ($row = mysqli_fetch_assoc($result)) {
-    $shareholder++;
-    $ss = $row["shares"];
-    $ssp = $row["shares"];
-    $sspm = $ssp * 10;
-    $sharesold += $ss;
-    $sharesoldprice += $sspm;
-}
-?>
 
 <!DOCTYPE html>
 <html lang="en">
